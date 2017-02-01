@@ -3,6 +3,7 @@
       var v = this.value;
       var key = event.keyCode || event.charCode;
       if(key == 8 || key == 46) {
+        alert('delete pressed');
       }else {
         if (v.match(/^\d{2}$/) !== null) {
             this.value = v + '/';
@@ -13,9 +14,13 @@
     });
   });
 
-  if(key == 8 || key == 46) {
-    alert('delete pressed');
-  }
+  // var detectDelete = function(event) {
+  //   var key = event.keyCode || event.charCode;
+  //   if(key == 8 || key == 46) {
+  //     alert('delete pressed');
+  //   }
+  // };
+  // detectDelete();
 
   $(".inputTxt").bind("keypress keyup keydown", function (event) {
     var evtType = event.type;
