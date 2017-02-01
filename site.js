@@ -1,4 +1,3 @@
-jQuery.(document).ready(function() {
   $('.dob-field').on('input', function() {
     $(this).on('keydown', function(e) {
       var v = this.value;
@@ -34,4 +33,3 @@ jQuery.(document).ready(function() {
             break;
     }
   });
-});
