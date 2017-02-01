@@ -1,6 +1,6 @@
 body {
 	padding: 20px;
-	
+
 	background: #333;
 }
 
@@ -11,4 +11,11 @@ input {
 	border-radius: 7px;
 
 	font-size: 18px;
+}
+
+#log {
+	color: #fff;
+}
+#log * {
+	color: #fff;
 }
