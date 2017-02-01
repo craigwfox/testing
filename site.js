@@ -24,26 +24,26 @@ jQuery(document).ready(function() {
   var allowedKey = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "NUMPAD0", "NUMPAD1", "NUMPAD2", "NUMPAD3", "NUMPAD4", "NUMPAD5", "NUMPAD6", "NUMPAD7", "NUMPAD8", "NUMPAD9", "DELETE", "BACK_SPACE"];
 
   var keyDel = ["DELETE", "BACK_SPACE"];
-  $('#log').html(keyValue);
-  //bind keydown to your element
-  // element.on("keydown", function (e) {
-  //   var key = e.charCode || e.keyCode || 0;
-  //   var keyValue = keyboardMap[key];
 
-  //   if ($.inArray(keyValue, keyDel) !== -1) {
-  //     console.log('deleteing');
-  //     $('#log').html('deleteing');
-  //     return true;
-  //   } else if ($.inArray(keyValue, allowedKey) !== -1){
-  //     console.log('allowed');
-  //     $('#log').html('allowed');
-  //     return true;
-  //   }
-  //   else{
-  //     console.log('not allowed');
-  //     $('#log').html('not allowed');
-  //     return  false;
-  //   }
+  //bind keydown to your element
+  element.on("keydown", function (e) {
+    var key = e.charCode || e.keyCode || 0;
+    var keyValue = keyboardMap[key];
+    $('#log').html(keyValue);
+    // if ($.inArray(keyValue, keyDel) !== -1) {
+    //   console.log('deleteing');
+    //   $('#log').html('deleteing');
+    //   return true;
+    // } else if ($.inArray(keyValue, allowedKey) !== -1){
+    //   console.log('allowed');
+    //   $('#log').html('allowed');
+    //   return true;
+    // }
+    // else{
+    //   console.log('not allowed');
+    //   $('#log').html('not allowed');
+    //   return  false;
+    // }
   })
 });
 
