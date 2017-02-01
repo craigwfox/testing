@@ -3,7 +3,6 @@
       var v = this.value;
       var key = event.keyCode || event.charCode;
       if(key == 8 || key == 46) {
-        alert('delete pressed');
       }else {
         if (v.match(/^\d{2}$/) !== null) {
             this.value = v + '/';
