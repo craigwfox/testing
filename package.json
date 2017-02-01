@@ -1,0 +1,22 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "testing js issues",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigwfox/testing.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigwfox/testing/issues"
+  },
+  "homepage": "https://github.com/craigwfox/testing#readme",
+  "dependencies": {
+    "dateformat": "^2.0.0"
+  }
+}
