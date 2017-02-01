@@ -1,5 +1,5 @@
   $('.dob-field').on('input', function() {
-    $(this).on('keydown', function(e) {
+    $(this).on('keyup', function(e) {
       var v = this.value;
       var key = event.keyCode || event.charCode;
       if(key == 8 || key == 46) {
@@ -20,15 +20,15 @@
     var ekeyCode = event.keyCode;
 
     switch (evtType) {
-        case 'keypress':
-            $("#log").html($("#log").html() + "<b>" + evtType + "</b>" + " keycode: " + ekeyCode + " charcode: " + echarCode + " which: " + eWhich + "<br>");
-            break;
+        // case 'keypress':
+        //     $("#log").html("<b>" + evtType + "</b>" + " keycode: " + ekeyCode + " charcode: " + echarCode + " which: " + eWhich + "<br>");
+        //     break;
         case 'keyup':
-            $("#log").html($("#log").html() + "<b>" + evtType + "</b>" + " keycode: " + ekeyCode + " charcode: " + echarCode + " which: " + eWhich + "<p>");
+            $("#log").html("<b>" + evtType + "</b>" + " keycode: " + ekeyCode + " charcode: " + echarCode + " which: " + eWhich + "<p>");
             break;
-        case 'keydown':
-            $("#log").html($("#log").html() + "<b>" + evtType + "</b>" + " keycode: " + ekeyCode + " charcode: " + echarCode + " which: " + eWhich + "<br>");
-            break;
+        // case 'keydown':
+        //     $("#log").html("<b>" + evtType + "</b>" + " keycode: " + ekeyCode + " charcode: " + echarCode + " which: " + eWhich + "<br>");
+        //     break;
         default:
             break;
     }
