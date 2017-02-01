@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Testing</title>
-
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
@@ -15,20 +16,28 @@
 	<br>
 	<br>
 	
-	<div class="input-test">
-		<input type="text" placeholder="mm/dd/yyyy" class="dob-field inputTxt">
-	</div>
+	<!-- <div class="input-test form-group">
+		<label for="">Date</label>
+		<input type="text" placeholder="mm/dd/yyyy" class="dob-field form-control">
+	</div> -->
+
+	<div class="form-group dob-field">
+    <label for="date">Date Test</label>
+    <input id="date" type="tel" class="masked form-control" 
+    	placeholder="MM/DD/YYYY"
+      pattern="(1[0-2]|0[1-9])\/(1[5-9]|2\d)" 
+      data-valid-example="05/26/2018"> 
+  </div>
 
 	<br>
 	<br>
 	<br>
 	
-	<input type="text" class="inputTxt" placeholder="type any key to see keycode">
-
 	<script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
-	<script src="site.js?v=8"></script>
+
+	<script src="site.js?v=9"></script>
 </body>
 </html>

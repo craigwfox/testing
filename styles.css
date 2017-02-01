@@ -12,6 +12,9 @@ input {
 
 	font-size: 18px;
 }
+label {
+	color: #fff;
+}
 
 #log {
 	color: #fff;
