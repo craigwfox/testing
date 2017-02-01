@@ -13,6 +13,10 @@
     });
   });
 
+  if(key == 8 || key == 46) {
+    alert('delete pressed');
+  }
+
   $(".inputTxt").bind("keypress keyup keydown", function (event) {
     var evtType = event.type;
     var eWhich = event.which;
